@@ -1,0 +1,221 @@
+
+body{
+    background-color: lightcyan;
+}
+
+
+
+
+
+header{
+    background-color: #eaeaea; 
+    height: 200px;
+    width: 100%;
+    position: relative;
+    border-radius: 20px;    
+    background-image: url(https://images.vexels.com/media/users/3/139460/isolated/preview/a64261656f9f790c5a3fc288e7ac420d-carreras-de-coches-de-velocidad-by-vexels.png),
+                       url(https://images.vexels.com/media/users/3/145586/isolated/preview/8f11dbfb5ce1e294f79a0f9aea6b36bf-silueta-de-vista-lateral-de-coche-de-ciudad-by-vexels.png),
+                       url(https://www.loscarrosusados.com/wp-content/uploads/2019/07/carros-usados.png);
+    background-repeat: no-repeat;
+    background-size: 10.4% 100%, 15% 210%, contain ;
+    background-position: 0%, 13%, 102%;
+    border: 7px solid black;
+}
+
+header h1{
+    font-size: 130px;
+    font-family: 'Anton', sans-serif;
+    font-weight: 900;
+    letter-spacing: 10px;
+    margin: auto;    
+    text-align: center;
+}
+
+nav li{
+    list-style: none;
+    overflow: hidden;
+
+}
+
+nav li a{
+    text-decoration: none;
+    color: black;
+   
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 37px;
+    background-color: lightblue;
+    border-radius: 20px;
+    font-family: 'Lemonada', cursive;
+    padding: 20px;
+    border: 7px solid black;
+    margin-top: 5px;
+}
+
+nav li a::before, nav li a::after{
+    display: block;
+    height: 2px;
+    width: 100%;
+    content: "";
+    background-color: black;
+    transition: transform 2s;
+}
+
+
+nav li a::before{
+    transform: translateX(102%);
+}
+
+nav li a::after{
+    transform: translateX(-102%);
+}
+
+nav li a:hover::after{
+    transform: translateX(0);
+}
+
+nav li a:hover::before{
+    transform: translateX(0);
+}
+
+@keyframes changeSize {
+    50%{
+        font-size: 39px;
+        letter-spacing: 4px;
+    }
+    100%{
+        font-size: 40px;
+        letter-spacing: 4px;
+
+    }
+}
+
+nav li a:hover{
+    animation: changeSize 5s forwards;
+}
+
+nav li a:active{
+    color: darkblue;
+}
+
+.cars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 52%;
+    font-family: 'Lemonada', cursive;
+     background-color: orange;
+     padding: 20px;
+       border-radius: 20px;
+       margin-top:-559px;
+       float: right;
+      
+}
+
+.cars article{
+    width: 90%;
+    border: 5px double black;
+    text-align: center;
+    border-radius: 12px;
+    margin-top: 20px;
+    background-color: seashell;
+
+    background-image: url(https://image.flaticon.com/icons/png/512/48/48688.png),
+                      url(https://images.vexels.com/media/users/3/143494/isolated/preview/9eb326992c86148a152e751a144b9357-perno-amarillo-by-vexels.png),
+                      url(https://cdn.pixabay.com/photo/2017/10/19/00/57/information-2866132_960_720.png),
+                      url( https://image.freepik.com/foto-gratis/fondo-pared-ladrillo-fondo-wallpaper-textura-concept_53876-31729.jpg);
+    background-size: 18% 15%, 20%, 34%, contain;
+    background-position: 2% 0%, 99% 0%, -12% 90%, 0% 100%;
+    background-repeat: no-repeat;
+    padding: 2px;
+    
+
+
+}
+
+.cars article img{
+ display: block;
+  width: 70%;
+  height: 430px;
+  margin: auto;
+  border-radius: 9px;
+  box-shadow: 3px 2px 2px 2px brown;
+  filter: blur(3);
+}
+
+.cars h1{
+    
+    font-size: 38px;
+    font-weight: 900;
+}
+
+.cars p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+header h1{
+    animation: beat 2s infinite;
+}
+
+
+@keyframes beat {
+    20%{
+        transform: scale(1.02);
+    }
+
+    50% {
+        transform: scale(1.025);
+    }
+}
+
+main aside{
+    width: 24.3%;
+    border: 10px solid black;
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+     margin-top: 40px;
+     background: #333;
+     outline: 5px solid green;
+    
+}
+
+main aside img{
+    width: 100%;
+    order: 1
+}
+
+main aside input{
+    width: 200px;
+    display: block;
+    margin:  5px 0px 5px 0px;
+    width: 100%;
+    border: none;
+    background: transparent;
+    margin: 20px  0px 20px 0px;
+    border-bottom: 3px solid #2da
+}
+
+
+main aside textarea{
+    border: none;
+    background: transparent;
+    border-bottom: 3px solid #2da
+}
+
+.flex_img{
+    width: 60%;
+    padding: 30px;
+    background: white;
+    border-radius: 50%;
+}
+
+.form{
+    order:2
+}
